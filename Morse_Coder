@@ -1,0 +1,115 @@
+morse_string = ""
+cur_let = 0
+
+text_string = input ('Enter message here (surrounded by \"\"):')
+
+print ("You entered: %s" %text_string)
+while cur_let <= len(text_string) - 1:
+
+	if text_string[cur_let] == "a":
+		morse_string = morse_string + ".-"
+		morse_string = morse_string + " "
+
+	if text_string[cur_let] == "b":
+		morse_string = morse_string + "-..."
+		morse_string = morse_string + " "
+
+	if text_string[cur_let] == "c":
+		morse_string = morse_string + "-.-."
+		morse_string = morse_string + " "
+
+	if text_string[cur_let] == "d":
+		morse_string = morse_string + "-.."
+		morse_string = morse_string + " "
+
+	if text_string[cur_let] == "e":
+		morse_string = morse_string + "."
+		morse_string = morse_string + " "
+
+	if text_string[cur_let] == "f":
+		morse_string = morse_string + "..-."
+		morse_string = morse_string + " "
+
+	if text_string[cur_let] == "g":
+		morse_string = morse_string + "--."
+		morse_string = morse_string + " "
+
+	if text_string[cur_let] == "h":
+		morse_string = morse_string + "...."
+		morse_string = morse_string + " "
+
+	if text_string[cur_let] == "i":
+		morse_string = morse_string + ".."
+		morse_string = morse_string + " "
+
+	if text_string[cur_let] == "j":
+		morse_string = morse_string + ".---"
+		morse_string = morse_string + " "
+
+	if text_string[cur_let] == "k":
+		morse_string = morse_string + "-.-"
+		morse_string = morse_string + " "
+
+	if text_string[cur_let] == "l":
+		morse_string = morse_string + ".-.."
+		morse_string = morse_string + " "
+
+	if text_string[cur_let] == "m":
+		morse_string = morse_string + "--"
+		morse_string = morse_string + " "
+
+	if text_string[cur_let] == "n":
+		morse_string = morse_string + "-."
+		morse_string = morse_string + " "
+
+	if text_string[cur_let] == "o":
+		morse_string = morse_string + "---"
+		morse_string = morse_string + " "
+
+	if text_string[cur_let] == "p":
+		morse_string = morse_string + ".--."
+		morse_string = morse_string + " "
+
+	if text_string[cur_let] == "q":
+		morse_string = morse_string + "--.-"
+		morse_string = morse_string + " "
+
+	if text_string[cur_let] == "r":
+		morse_string = morse_string + ".-."
+		morse_string = morse_string + " "
+
+	if text_string[cur_let] == "s":
+		morse_string = morse_string + "..."
+		morse_string = morse_string + " "
+
+	if text_string[cur_let] == "t":
+		morse_string = morse_string + "-"
+		morse_string = morse_string + " "
+
+	if text_string[cur_let] == "u":
+		morse_string = morse_string + "..-"
+		morse_string = morse_string + " "
+
+	if text_string[cur_let] == "v":
+		morse_string = morse_string + "...-"
+		morse_string = morse_string + " "
+
+	if text_string[cur_let] == "w":
+		morse_string = morse_string + ".--"
+		morse_string = morse_string + " "
+
+	if text_string[cur_let] == "x":
+		morse_string = morse_string + "-..-"
+		morse_string = morse_string + " "
+
+	if text_string[cur_let] == "y":
+		morse_string = morse_string + "-.--"
+		morse_string = morse_string + " "
+
+	if text_string[cur_let] == "z":
+		morse_string = morse_string + "--.."
+		morse_string = morse_string + " "
+
+	cur_let += 1
+
+print ("The morse code is: %s" %morse_string)
