@@ -1,0 +1,162 @@
+text_string = ""
+cur_let = 0
+letter_test = ""
+space_count = 0
+
+morse_string = input ('Enter morse code here (surrounded by \"\"):')
+
+print ("You entered: %s" %morse_string)
+
+while cur_let <= len(morse_string) - 1:
+	if morse_string[cur_let] != " ":
+		while space_count < 2:
+			if morse_string[cur_let] != " ":
+				space_count = 0
+				letter_test = letter_test + morse_string[cur_let]
+			elif morse_string[cur_let] == " ":
+				space_count += 1
+
+		if text_string[cur_let] == "._":
+			morse_string = morse_string + "a"
+
+		if text_string[cur_let] == "_...":
+			morse_string = morse_string + "b"
+
+
+		if text_string[cur_let] == "_._.":
+			morse_string = morse_string + "c"
+
+
+		if text_string[cur_let] == "_..":
+			morse_string = morse_string + "d"
+
+
+		if text_string[cur_let] == ".":
+			morse_string = morse_string + "e"
+
+
+		if text_string[cur_let] == ".._.":
+			morse_string = morse_string + "f"
+
+
+		if text_string[cur_let] == "__.":
+			morse_string = morse_string + "g"
+
+
+		if text_string[cur_let] == "....":
+			morse_string = morse_string + "h"
+
+
+		if text_string[cur_let] == "..":
+			morse_string = morse_string + "i"
+
+
+		if text_string[cur_let] == ".___":
+			morse_string = morse_string + ". _ _ _"
+
+
+		if text_string[cur_let] == "k":
+			morse_string = morse_string + "_ . _"
+
+
+		if text_string[cur_let] == "l":
+			morse_string = morse_string + ". _ . ."
+
+
+		if text_string[cur_let] == "m":
+			morse_string = morse_string + "_ _"
+
+
+		if text_string[cur_let] == "n":
+			morse_string = morse_string + "_ ."
+
+
+		if text_string[cur_let] == "o":
+			morse_string = morse_string + "_ _ _"
+
+
+		if text_string[cur_let] == "p":
+			morse_string = morse_string + ". _ _ ."
+
+
+		if text_string[cur_let] == "q":
+			morse_string = morse_string + "_ _ . _"
+
+
+		if text_string[cur_let] == "r":
+			morse_string = morse_string + ". _ ."
+
+
+		if text_string[cur_let] == "s":
+			morse_string = morse_string + ". . ."
+
+
+		if text_string[cur_let] == "t":
+			morse_string = morse_string + "_"
+
+
+		if text_string[cur_let] == "u":
+			morse_string = morse_string + ". . _"
+
+
+		if text_string[cur_let] == "v":
+			morse_string = morse_string + ". . . _"
+
+
+		if text_string[cur_let] == "w":
+			morse_string = morse_string + ". _ _"
+
+
+		if text_string[cur_let] == "x":
+			morse_string = morse_string + "_ . . _"
+
+
+		if text_string[cur_let] == "y":
+			morse_string = morse_string + "_ . _ _"
+
+
+		if text_string[cur_let] == "z":
+			morse_string = morse_string + "_ _ . ."
+
+
+		if text_string[cur_let] == "1":
+			morse_string = morse_string + ". _ _ _ _"
+
+
+		if text_string[cur_let] == "2":
+			morse_string = morse_string + ". . _ _ _"
+
+
+		if text_string[cur_let] == "3":
+			morse_string = morse_string + ". . . _ _"
+
+
+		if text_string[cur_let] == "4":
+			morse_string = morse_string + ". . . . _"
+
+
+		if text_string[cur_let] == "5":
+			morse_string = morse_string + ". . . . ."
+
+
+		if text_string[cur_let] == "6":
+			morse_string = morse_string + "_ . . . ."
+
+
+		if text_string[cur_let] == "7":
+			morse_string = morse_string + "_ _ . . ."
+
+
+		if text_string[cur_let] == "8":
+			morse_string = morse_string + "_ _ _ . ."
+
+
+		if text_string[cur_let] == "9":
+			morse_string = morse_string + "_ _ _ _ ."
+
+
+		if text_string[cur_let] == "0":
+			morse_string = morse_string + "_ _ _ _ _"
+
+
+
